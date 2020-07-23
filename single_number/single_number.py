@@ -3,9 +3,18 @@ Input: a List of integers where every int except one shows up twice
 Returns: an integer
 '''
 def single_number(arr):
-    # Your code here
 
-    pass
+    # take in a List
+    # remove all duplicates including the original
+    # https://stackoverflow.com/questions/26790493/remove-duplicate-and-original-from-list-python
+    arr = [i for i in arr if arr.count(i) == 1]
+
+
+
+
+    return arr[0]
+
+
 
 
 if __name__ == '__main__':
